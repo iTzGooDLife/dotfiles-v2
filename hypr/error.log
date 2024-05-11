@@ -1,0 +1,79 @@
+[LOG] Instance Signature: 728a8bb48e0f7de1cbe1ad13fb469754c3d0bc97_1696777716
+[LOG] Hyprland PID: 717
+[LOG] ===== SYSTEM INFO: =====
+[LOG] System name: Linux
+[LOG] Node name: Julius
+[LOG] Release: 6.5.5-arch1-1
+[LOG] Version: #1 SMP PREEMPT_DYNAMIC Sat, 23 Sep 2023 22:55:13 +0000
+
+
+[LOG] GPU information:
+01:00.0 VGA compatible controller [0300]: NVIDIA Corporation TU117M [GeForce GTX 1650 Ti Mobile] [10de:1f95] (rev a1) (prog-if 00 [VGA controller])
+
+
+[WARN] Warning: you're using an NVIDIA GPU. Make sure you follow the instructions on the wiki if anything is amiss.
+
+[LOG] os-release:
+NAME="Arch Linux"
+PRETTY_NAME="Arch Linux"
+ID=arch
+BUILD_ID=rolling
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://archlinux.org/"
+DOCUMENTATION_URL="https://wiki.archlinux.org/"
+SUPPORT_URL="https://bbs.archlinux.org/"
+BUG_REPORT_URL="https://bugs.archlinux.org/"
+PRIVACY_POLICY_URL="https://terms.archlinux.org/docs/privacy-policy/"
+LOGO=archlinux-logo
+
+[LOG] ========================
+
+
+
+[INFO] If you are crashing, or encounter any bugs, please consult https://wiki.hyprland.org/Crashes-and-Bugs/
+
+
+[LOG] 
+Current splash: "my win11 install runs hyprland that is true" - raf
+
+
+[LOG] Creating the HookSystem!
+[LOG] Creating the KeybindManager!
+[LOG] [hookSystem] New hook event registered: configReloaded
+[LOG] Creating the AnimationManager!
+[LOG] Created a bezier curve, baked 255 points, mem usage: 4.08kB, time to bake: 57.55µs. Estimated average calc time: 0.28µs.
+[LOG] Creating the ConfigManager!
+[LOG] Creating the CHyprError!
+[LOG] [hookSystem] New hook event registered: focusedMon
+[LOG] [hookSystem] New hook event registered: preRender
+[LOG] Creating the LayoutManager!
+[LOG] Reloading the config!
+[LOG] Created a bezier curve, baked 255 points, mem usage: 4.08kB, time to bake: 29.61µs. Estimated average calc time: 0.29µs.
+[LOG] Using config: /home/julio/.config/hypr/hyprland.conf
+[LOG] Created a bezier curve, baked 255 points, mem usage: 4.08kB, time to bake: 29.47µs. Estimated average calc time: 0.29µs.
+[LOG] Created a bezier curve, baked 255 points, mem usage: 4.08kB, time to bake: 29.12µs. Estimated average calc time: 0.29µs.
+[LOG] Created a bezier curve, baked 255 points, mem usage: 4.08kB, time to bake: 17.18µs. Estimated average calc time: 0.19µs.
+[LOG] Created a bezier curve, baked 255 points, mem usage: 4.08kB, time to bake: 17.32µs. Estimated average calc time: 0.19µs.
+[LOG] Created a bezier curve, baked 255 points, mem usage: 4.08kB, time to bake: 17.25µs. Estimated average calc time: 0.18µs.
+[LOG] Disabling stdout logs! Check the log for further logs.
+[wlr] [libseat] [libseat/backend/seatd.c:64] Could not connect to socket /run/seatd.sock: No such file or directory
+[wlr] [libseat] [libseat/libseat.c:76] Backend 'seatd' failed to open seat, skipping
+[wlr] [libseat] [libseat/libseat.c:73] Seat opened with backend 'logind'
+[wlr] [backend/session/session.c:109] Successfully loaded libseat session
+[wlr] [backend/session/session.c:384] Ignoring '/dev/dri/card1': not a KMS device
+[wlr] [backend/backend.c:220] Found 1 GPUs
+[wlr] [backend/drm/backend.c:202] Initializing DRM backend for /dev/dri/card0 (simpledrm)
+[wlr] [backend/drm/drm.c:105] Using atomic DRM interface
+[wlr] [backend/drm/drm.c:121] ADDFB2 modifiers supported
+[wlr] [backend/drm/drm.c:253] Found 1 DRM CRTCs
+[wlr] [backend/drm/drm.c:211] Found 1 DRM planes
+[wlr] [render/egl.c:206] Supported EGL client extensions: EGL_EXT_platform_base EGL_EXT_device_base EGL_EXT_device_enumeration EGL_EXT_device_query EGL_KHR_client_get_all_proc_addresses EGL_EXT_client_extensions EGL_KHR_debug EGL_KHR_platform_x11 EGL_EXT_platform_x11 EGL_EXT_platform_device EGL_MESA_platform_surfaceless EGL_EXT_explicit_device EGL_KHR_platform_wayland EGL_EXT_platform_wayland EGL_KHR_platform_gbm EGL_MESA_platform_gbm EGL_EXT_platform_xcb
+[wlr] [EGL] command: eglQueryDeviceStringEXT, error: EGL_BAD_PARAMETER (0x300c), message: "eglQueryDeviceStringEXT"
+[wlr] [EGL] command: eglQueryDeviceStringEXT, error: EGL_BAD_PARAMETER (0x300c), message: "eglQueryDeviceStringEXT"
+[wlr] [render/egl.c:509] DRM device '/dev/dri/card0' has no render node, falling back to primary node
+[wlr] [render/egl.c:320] Software rendering detected, please use the WLR_RENDERER_ALLOW_SOFTWARE environment variable to proceed
+[wlr] [render/egl.c:572] Failed to initialize EGL context
+[wlr] [render/gles2/renderer.c:804] Could not initialize EGL
+[CRITICAL] m_sWLRRenderer was NULL!
+[CRITICAL] Critical error thrown: wlr_gles2_renderer_create_with_drm_fd() failed!
+[CRITICAL] Hyprland has crashed :( Consult the crash report at /home/julio/.hyprland/hyprlandCrashReport717.txt for more information.

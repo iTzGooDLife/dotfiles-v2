@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [[ $(ps aux | grep -i "flameshot" | wc -l) == 1 ]]; then
+  flameshot&
+fi
+
+if [ $1 = "full" ]; then
+	#QT_QPA_PLATFORM flameshot full ;
+	flameshot full ;
+elif [ $1 = "area" ]; then
+	#QT_QPA_PLATFORM=xcb flameshot gui ;
+	flameshot gui ;
+fi

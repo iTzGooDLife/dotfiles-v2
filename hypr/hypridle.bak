@@ -1,0 +1,11 @@
+listener {
+    timeout = 300          # in seconds
+	on-timeout = swaylock
+    on-resume = notify-send "Bienvenido"
+}
+
+listener {
+    timeout = 420 # in seconds
+	on-timeout = systemctl suspend
+    on-resume = notify-send "Bienvenido"
+}

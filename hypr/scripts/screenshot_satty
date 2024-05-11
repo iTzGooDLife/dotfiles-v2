@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [[ $(ps aux | grep -i "satty" | wc -l) != 1 ]]; then
+	ps aux | grep -i "satty" | awk '{print $2}' | head -n 1 | xargs kill -9
+fi
+
+if [ $1 = "full" ]; then
+	#QT_QPA_PLATFORM flameshot full ;
+	grim -g "$(slurp -o -r -c '#ff0000ff')" - | satty --filename - --output-filename ~/Imágenes/Screenshots/satty-$(date '+%Y%m%d-%H:%M:%S').png
+elif [ $1 = "area" ]; then
+	grim -g "$(slurp -b 000000a0)" - | satty --filename - --copy-command wl-copy
+elif [ $1 = "area_save" ]; then
+	grim -g "$(slurp -b 000000a0)" - | satty --filename - --output-filename ~/Imágenes/Screenshots/satty-$(date '+%Y%m%d-%H:%M:%S').png
+fi
