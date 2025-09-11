@@ -611,12 +611,14 @@ C.PreventArrow = {
 	},
 }
 
+--[[
 C.copilot = {
 	n = {
 		["<leader>ce"] = { "<cmd>Copilot enable<CR>", "Enable Copilot" },
 		["<leader>cd"] = { "<cmd>Copilot disable<CR>", "Disable Copilot" },
 	},
 }
+]]--
 
 -- Apply mappings for the general, tabufline, comment, lspconfig, nvimtree, telescope, nvterm, whichkey, and blankline sections
 local sections = {
@@ -657,7 +659,7 @@ local sections = {
   "Trouble",
   "Telescope",
   "PreventArrow",
-  "copilot"
+  --"copilot"
 }
 for _, section in ipairs(sections) do
   local mappings = C[section]

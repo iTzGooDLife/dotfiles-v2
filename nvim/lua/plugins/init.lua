@@ -57,6 +57,7 @@ return {
     event = "InsertEnter",
   },
 
+  --[[
   {
     "hrsh7th/nvim-cmp",
     dependencies = {
@@ -94,6 +95,7 @@ return {
       require "plugins.configs.cmp"
     end,
   },
+  --]]
 
   {
     "L3MON4D3/LuaSnip",
@@ -167,6 +169,7 @@ return {
       },
     },
   },
+  --[[
   {
     "yetone/avante.nvim",
     lazy = false,
@@ -182,6 +185,7 @@ return {
       "zbirenbaum/copilot.lua",
     },
   },
+  --]]
 
   -- {
   --     "zbirenbaum/copilot.lua",
@@ -526,6 +530,7 @@ return {
       require("project_nvim").setup()
     end,
   },
+  --[[
   {
     "olimorris/codecompanion.nvim",
     dependencies = {
@@ -540,6 +545,7 @@ return {
       require "plugins.configs.codecompanion"
     end,
   },
+  --]]
   {
     "f-person/git-blame.nvim",
     lazy = false,
