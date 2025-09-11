@@ -590,6 +590,8 @@ C.Telescope = {
 		["<C-g>"] = { ":Telescope live_grep<cr>", "Live grep with telescope" },
 	},
 }
+
+--[[
 C.PreventArrow = {
 	n = {
 		["<up>"] = {
@@ -610,6 +612,7 @@ C.PreventArrow = {
 		},
 	},
 }
+]]--
 
 --[[
 C.copilot = {
